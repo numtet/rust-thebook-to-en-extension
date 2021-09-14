@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Rust the Book to En",
+  "version": "0.1",
+  "description": "Add a link to English rust the book to the site translated in Japanese",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://doc.rust-jp.rs/*"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
